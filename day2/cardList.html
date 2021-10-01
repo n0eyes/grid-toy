@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="default.css" rel="stylesheet"/>
+
+  <style>
+    .card-list-con{
+      overflow-x: hidden;
+    }
+     .card-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+      }
+      .card-item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        padding: 0 10px;
+      }
+      .card-img{
+        height: 0;
+        padding-bottom: 60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .card-desc{
+      background-color: white;
+      padding: 1.5em;
+      flex-grow: 1;
+    }
+    @media (min-width: 600px){
+      .card-item{
+        width: 50%;
+      }
+    }
+    @media (min-width: 1200px){
+      .card-item{
+        width: 33.33%;
+      }
+    }
+  </style>
+  <title>cardList</title>
+</head>
+<body>
+  <div class="card-list-con">
+  <ul class="card-list">
+    <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+    </li>
+    <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem, optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+    </li>
+    <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+    </li>
+    <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo opt dolor sit amet consectetur adipisicing elit. Quis harum labore at illo opt dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+    </li>
+    <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+    </li>
+    <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+    </li>  <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem,ias.</p>
+    </li>
+    <li class="card-item">
+      <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+      <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
