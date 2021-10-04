@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+header,
+nav {
+  width: 100%;
+}
+.form {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px 2rem;
+}
+.form__item {
+  align-self: stretch;
+}
+.form .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.form input {
+  border-radius: 3px;
+  border: none;
+  margin-left: auto;
+}
+.form button {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: none;
+  background-color: gold;
+  font-size: 1rem;
+  padding: 0.5em;
+}
+.menu {
+  display: flex;
+}
+.item {
+  width: 25%;
+  background-color: gold;
+  transition: 0.5s;
+}
+.item:hover {
+  width: 35%;
+  background-color: crimson;
+}
+.item a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.card-list-con {
+  overflow-x: hidden;
+  padding: 10px;
+  width: 100%;
+  flex-grow: 1;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding: 0 10px;
+}
+.card-img {
+  height: 0;
+  padding-bottom: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-desc {
+  background-color: white;
+  padding: 1.5em;
+  flex-grow: 1;
+}
+.aside1 {
+  width: 100%;
+  background-color: white;
+}
+.aside2 {
+  width: 100%;
+  background-color: #666;
+}
+.list-item {
+  display: flex;
+  margin-top: 5px;
+  padding: 10px;
+}
+.aside2 .list-item p {
+  color: white;
+}
+.list-item::before {
+  content: "⌦";
+  /* color: white; */
+}
+.aside2 .list-item::before {
+  color: white;
+}
+footer {
+  order: 4;
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.modal {
+  display: none;
+  position: absolute;
+  background-color: rgba(244, 244, 244, 0.9);
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  font-weight: bold;
+}
+.modal-btn {
+  font-size: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media (min-width: 600px) {
+  .card-list-con {
+    order: 2;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-item {
+    width: 50%;
+  }
+  .list {
+    max-width: 300px;
+  }
+  .aside1 {
+    order: 1;
+    width: 20%;
+  }
+  .aside2 {
+    order: 3;
+    width: 20%;
+  }
+}
+@media (min-width: 2000px) {
+  .card-item {
+    width: 33.33%;
+  }
+}

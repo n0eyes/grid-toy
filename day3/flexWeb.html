@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F-Web</title>
+
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="flexWeb.css">
+ 
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <form class="form">
+      <div class="title form__item">F-Web</div>
+      <input type="search" class="form__item">
+      <button class="form__item" value="검색">검색</button>
+      <span class="modal-btn">☝</span>
+    </form>
+  </header>
+  
+  <!-- menu -->
+  <nav>
+    <ul class="menu">
+      <li class="item"><a href="">Home</a></li>
+      <li class="item"><a href="">HTML</a></li>
+      <li class="item"><a href="">CSS</a></li>
+      <li class="item"><a href="">JS</a></li>
+    </ul>
+  </nav>
+  <!-- main -->
+  <div class="card-list-con">
+    <ul class="card-list">
+      <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+      </li>
+      <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem, optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+      </li>
+      <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+      </li>
+      <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo opt dolor sit amet consectetur adipisicing elit. Quis harum labore at illo opt dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+      </li>
+      <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+      </li>
+      <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+      </li>  <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem,ias.</p>
+      </li>
+      <li class="card-item">
+        <figure class="card-img" style='background-image: url(./cat.jpg)'></figure>
+        <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum labore at illo optio incidunt facere consectetur itaque? Commodi, molestias.</p>
+      </li>
+    </ul>
+  </div>
+  <!-- aside1 -->
+  <ul class="list aside1">
+    <li class="list-item">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat temporibus, nihil qui doloribus minus consequuntur, fugit facere laborum, atque ullam ea corporis deleniti. Debitis, voluptatem?</p>
+    </li>
+    <li class="list-item">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat temporibus, nihil qui doloribus minus consequuntur, fugit facere laborum, atque ullam ea corporis deleniti. Debitis, voluptatem?</p>
+    </li>
+    <li class="list-item">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat temporibus, nihil qui doloribus minus consequuntur, fugit facere laborum, atque ullam ea corporis deleniti. Debitis, voluptatem?</p>
+    </li>
+  </ul>
+  <!-- aside2 -->
+  <ul class="list aside2">
+    <li class="list-item">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat temporibus, nihil qui doloribus minus consequuntur, fugit facere laborum, atque ullam ea corporis deleniti. Debitis, voluptatem?</p>
+    </li>
+    <li class="list-item">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat temporibus, nihil qui doloribus minus consequuntur, fugit facere laborum, atque ullam ea corporis deleniti. Debitis, voluptatem?</p>
+    </li>
+    <li class="list-item">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat temporibus, nihil qui doloribus minus consequuntur, fugit facere laborum, atque ullam ea corporis deleniti. Debitis, voluptatem?</p>
+    </li>
+  </ul>
+  <!-- footer -->
+  <footer>
+    푸터푸터푸터푸터
+  </footer>
+  <div class="modal">
+    <div class="modal__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis expedita enim, facere similique eveniet pariatur veniam, magni libero ab repellendus sequi numquam exercitationem fugit?</div>
+  </div>
+  <script>
+    const modal = document.querySelector('.modal')
+    const modalBtn = document.querySelector('.modal-btn')
+    modal.style.display='none'
+    
+    modalBtn.onclick=()=>{
+      modal.style.display==='none' ? modal.style.display = 'flex' 
+      :  modal.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
